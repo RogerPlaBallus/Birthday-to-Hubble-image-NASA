@@ -12,6 +12,9 @@ const __dirname = path.dirname(__filename);
 export default defineConfig({
   base: "/Birthday-to-Hubble-image-NASA/",
   plugins: [react(), tailwindcss(), viteSingleFile()],
+  build: {
+    outDir: "docs",
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
